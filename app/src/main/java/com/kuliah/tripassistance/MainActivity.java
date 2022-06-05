@@ -31,14 +31,6 @@ public class MainActivity extends AppCompatActivity {
         list.addAll(ModelMainData.getListData());
         showRecyclerList();
 
-        Button tes = findViewById(R.id.buttonTes);
-        tes.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent inten = new Intent(MainActivity.this, ReligiActivity.class);
-                startActivity(inten);
-            }
-        });
     }
     private void showRecyclerList(){
         rvLayanan.setLayoutManager(new LinearLayoutManager(this));

@@ -13,10 +13,10 @@ public class ModelMainData {
     };
 
     private static int[] icon_layanan ={
-            R.drawable.wisata_alam,
-            R.drawable.wisata_kuliner,
-            R.drawable.wisata_religi,
-            R.drawable.tebak_wisata
+            R.drawable.destination,
+            R.drawable.food,
+            R.drawable.religion,
+            R.drawable.question
 
     };
 

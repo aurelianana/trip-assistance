@@ -4,10 +4,9 @@ public class SoalTebak {
 
     public static Integer gambar[] = {
             R.drawable.babi,
-            R.drawable.sate_lilit,
-            R.drawable.nasi_campur,
-            R.drawable.nasi_jinggo,
-            R.drawable.ayam_betutu,
+            R.drawable.uluwatu,
+            R.drawable.sanur,
+            R.drawable.penglipuran,
     };
 
     public static String kuis[] = {
@@ -15,16 +14,16 @@ public class SoalTebak {
     };
 
     public static String pilihan[][] = {
-            {"Babi Guling", "Ayam Betutu", "Warung Babi"},
-            {"Pura Besakih", "Pura A", "Pura B"},
-            {"Air Terjun", "Waterbom", "Pantai Nyang-Nyang"},
-            {"Hotel Pasusususu", "Hotel Awkwokwkow", "Hotel Bintang Satu"},
+            {"Babi Guling", "Ayam Betutu", "Sate Lilit"},
+            {"Pura Besakih", "Pura Ulun Danu Batur", "Pura Uluwatu"},
+            {"Savana Tianyar", "Taman Mumbul", "Pantai Sanur"},
+            {"Desa Penglipuran", "Museum Geopark", "GWK"},
     };
 
     public static String jawaban[] = {
             "Babi Guling",
-            "Pura B",
-            "Waterbom",
-            "Hotel Awkwokwkow",
+            "Pura Uluwatu",
+            "Pantai Sanur",
+            "Desa Penglipuran",
     };
 }

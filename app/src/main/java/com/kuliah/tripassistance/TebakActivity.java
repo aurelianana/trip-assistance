@@ -50,6 +50,10 @@ public class TebakActivity extends AppCompatActivity implements View.OnClickList
         jwb1.setBackgroundColor(Color.WHITE);
         jwb2.setBackgroundColor(Color.WHITE);
         jwb3.setBackgroundColor(Color.WHITE);
+        jwb1.setTextColor(Color.BLACK);
+        jwb2.setTextColor(Color.BLACK);
+        jwb3.setTextColor(Color.BLACK);
+
 
         Button pilihanSubmit = (Button) view;
         if(pilihanSubmit.getId() == R.id.submitJwb){
@@ -62,7 +66,7 @@ public class TebakActivity extends AppCompatActivity implements View.OnClickList
 
         }else{
             pilihan = pilihanSubmit.getText().toString();
-            pilihanSubmit.setBackgroundColor(Color.RED);
+            pilihanSubmit.setBackgroundColor(Color.GREEN);
         }
     }
 

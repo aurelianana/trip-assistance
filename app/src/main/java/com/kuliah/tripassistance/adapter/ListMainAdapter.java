@@ -3,6 +3,7 @@ package com.kuliah.tripassistance.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,6 +23,12 @@ import java.util.List;
 
 public class ListMainAdapter extends RecyclerView.Adapter<ListMainAdapter.ListViewHolder> {
     private ArrayList<ModelMain> listLayanan;
+
+    private OnItemClickCallback onItemClickCallback;
+
+    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback;
+    }
 
     public ListMainAdapter(ArrayList<ModelMain> list) {
         this.listLayanan = list;
@@ -43,6 +50,13 @@ public class ListMainAdapter extends RecyclerView.Adapter<ListMainAdapter.ListVi
                 .into(holder.imgMainData);
         holder.tvMainData.setText(modelMain.getNama_layanan());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onItemClickCallback.onItemClicked(listLayanan.get(holder.getAdapterPosition()));
+            }
+        });
+
     }
 
     @Override
@@ -61,6 +75,9 @@ public class ListMainAdapter extends RecyclerView.Adapter<ListMainAdapter.ListVi
             tvMainData = itemView.findViewById(R.id.tvMainData);
             cvMainData = itemView.findViewById(R.id.cvMainData);
         }
+    }
+    public interface OnItemClickCallback{
+        void onItemClicked(ModelMain data);
     }
 }
 /*

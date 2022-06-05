@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ModelMainData {
     private static String [] nama_layanan = {
-            "Wisata Alam",
+            "Wisata Khas Bali",
             "Wisata Kuliner",
             "Wisata Religi",
             "Tebak Wisata"

@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TripAssistance">
         <activity
+            android:name=".DetailKulinerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KulinerActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
@@ -27,6 +33,15 @@
             android:exported="false" />
         <activity
             android:name=".ReligiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailWisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TebakActivity"
             android:exported="false" />
     </application>
 
